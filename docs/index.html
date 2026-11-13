@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" href="data:,">
+  <title>工事進捗ダッシュボード</title>
+  <link rel="stylesheet" href="style.css?v=20261113-fe1c88b809">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipToContent">本文へ移動</a>
+  <header class="topbar">
+    <div class="brand-copy">
+      <p class="eyebrow" data-i18n="eyebrowBrand">1契約・2現場</p>
+      <h1 id="project-name">御領港一号防波堤灯台ほか１件撤去工事</h1>
+    </div>
+    <div class="header-tools">
+      <div class="as-of"><span data-i18n="asOfLabel">As of</span><strong id="as-of" data-i18n="checking">Checking</strong></div>
+      <a id="weather-link" class="weather-link" href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="weatherInfo">Weather</a>
+      <nav class="language-switcher" aria-label="Language" data-i18n-aria-label="languageSelector">
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+        <button type="button" data-language="ja" aria-pressed="true">日本語</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="status-band" aria-labelledby="current-phase">
+      <div>
+        <p class="eyebrow" data-i18n="statusEyebrow">いまの状況</p>
+        <div class="status-line"><span class="pulse" aria-hidden="true"></span><strong id="project-status"></strong></div>
+        <h2 id="current-phase"></h2>
+        <p id="status-copy" class="status-copy" data-i18n="statusCopy">The timeline is organized from mobilization through the reporting date using verified work records.</p>
+      </div>
+      <div class="milestone">
+        <span id="milestone-label">Current milestone</span>
+        <strong id="milestone-value"></strong>
+        <small id="milestone-note"></small>
+      </div>
+    </section>
+
+    <section class="summary-grid" aria-label="Project summary" data-i18n-aria-label="projectSummaryLabel">
+      <article class="summary"><span data-i18n="contractPeriod">Contract period</span><strong id="contract-period"></strong><small data-i18n="contractPeriodNote">Period verified from source documents</small></article>
+      <article class="summary"><span data-i18n="plannedStart">実施開始予定</span><strong id="planned-start"></strong><small data-i18n="plannedStartNote">施工計画書に記載</small></article>
+      <article class="summary"><span data-i18n="latestActual">Latest actual</span><strong id="last-activity"></strong><small data-i18n="latestActualNote">Verified from completed-work fields</small></article>
+      <article class="summary"><span data-i18n="reviewedSources">Reviewed sources</span><strong><span id="source-count"></span><span data-i18n="sourceCountSuffix"> sources</span></strong><small data-i18n="reviewedSourcesNote">Documents used for this view</small></article>
+    </section>
+
+
+  <section aria-labelledby="site-compare-heading">
+    <div class="section-head">
+      <div><p class="eyebrow" data-i18n="compareEyebrow">現場別の状況</p><h2 id="site-compare-heading" data-i18n="compareSites">2現場の比較</h2></div>
+      <span id="site-count" class="section-caption"></span>
+    </div>
+    <div id="site-overview" class="site-overview"></div>
+    <div id="site-notes" class="site-notes" aria-labelledby="site-notes-heading" hidden>
+      <h3 id="site-notes-heading" data-i18n="reviewItems">確認事項</h3>
+      <ul id="site-note-list"></ul>
+    </div>
+  </section>
+  <div id="site-scope" class="site-scope">
+    <nav id="site-filters" class="scope-controls" aria-label="現場の切り替え" data-i18n-aria-label="siteScope"></nav>
+    <span id="active-scope" class="active-scope"></span>
+  </div>
+    <section class="section-head">
+      <div><p class="eyebrow" data-i18n="workEyebrow">全体の見通し</p><h2 data-i18n="workStream">Work stream</h2></div>
+      <div class="legend" aria-label="Status legend" data-i18n-aria-label="statusLegendLabel"><span class="dot completed"></span><span data-i18n="completed">Completed</span> <span class="dot in-progress"></span><span data-i18n="inProgress">In progress</span> <span class="dot paused"></span><span data-i18n="paused">Paused</span> <span class="dot planned"></span><span data-i18n="planned">Planned</span></div>
+    </section>
+    <p class="gantt-hint" data-i18n="scrollSchedule">後の日付は工程表内を横にスクロールしてください。</p>
+    <section class="panel gantt-wrap" tabindex="0" aria-label="工程表" data-i18n-aria-label="scheduleLabel">
+      <div id="gantt-content" class="gantt-content">
+        <div id="gantt-scale" class="gantt-scale"></div>
+        <div id="gantt" class="gantt"></div>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="column-block">
+        <div class="section-head compact">
+          <div><p class="eyebrow" data-i18n="calendarEyebrow">日付で見る工程</p><h2 id="calendar-title" data-i18n="calendarTitleLabel">工程カレンダー</h2></div>
+          <div class="calendar-nav" aria-label="Change displayed month" data-i18n-aria-label="calendarNavigationLabel">
+            <button id="calendar-prev" type="button" aria-label="Previous month" data-i18n-aria-label="previousMonth">‹</button>
+            <span id="calendar-month"></span>
+            <button id="calendar-next" type="button" aria-label="Next month" data-i18n-aria-label="nextMonth">›</button>
+          </div>
+        </div>
+        <section class="panel calendar-card">
+          <div class="calendar-week" aria-hidden="true"><span data-i18n="mon">Mon</span><span data-i18n="tue">Tue</span><span data-i18n="wed">Wed</span><span data-i18n="thu">Thu</span><span data-i18n="fri">Fri</span><span data-i18n="sat">Sat</span><span data-i18n="sun">Sun</span></div>
+          <div id="calendar" class="calendar" aria-hidden="true"></div>
+          <div class="calendar-detail">
+            <label for="calendar-day-select" data-i18n="dayLabel">日付を選ぶ</label>
+            <select id="calendar-day-select"></select>
+            <div aria-live="polite">
+              <ul id="calendar-agenda" class="calendar-agenda"></ul>
+              <p id="calendar-empty" data-i18n="noCalendarEvents" hidden>この日の記録はありません。</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="column-block">
+        <div class="section-head compact"><div><p class="eyebrow" data-i18n="actualEyebrow">実績</p><h2 data-i18n="latestLog">Latest work</h2></div></div>
+        <section class="panel log-card" tabindex="0" aria-label="Verified work history" data-i18n-aria-label="verifiedHistoryLabel"><div id="recent-log"></div></section>
+      </div>
+    </section>
+
+    <section id="upcoming-section">
+      <div class="section-head upcoming-head">
+        <div><p class="eyebrow" data-i18n="upcomingEyebrow">予定</p><h2 data-i18n="upcomingPlan">Upcoming plan</h2></div>
+        <p class="section-caption" data-i18n="upcomingCaption">Unverified planned work is kept separate from confirmed actuals.</p>
+      </div>
+      <section class="panel upcoming-card"><div id="upcoming-log" class="upcoming-grid"></div></section>
+    </section>
+
+    <section id="materials-section">
+      <div class="section-head materials-head">
+        <div><p class="eyebrow" data-i18n="materialsEyebrow">材料資料</p><h2 data-i18n="fieldMaterials">Registered material references</h2></div>
+        <p class="section-caption" data-i18n="materialsCaption">Field-readable notes from screened registered documents</p>
+      </div>
+      <div id="materials-list" class="materials-grid"></div>
+    </section>
+
+    <section id="gallery-section">
+      <div class="section-head gallery-head">
+        <div><p class="eyebrow" data-i18n="photoEyebrow">写真記録</p><h2 data-i18n="photoJournal">Construction photo journal</h2></div>
+        <p class="section-caption" data-i18n="galleryCaption">Publication-approved milestone images</p>
+      </div>
+      <p id="gallery-empty" class="empty-state" hidden></p>
+      <div id="gallery" class="photo-carousel" hidden aria-label="Construction photo gallery" data-i18n-aria-label="galleryLabel">
+        <div class="photo-stage panel">
+          <button id="gallery-main" class="photo-main" type="button" aria-label="Open selected photo" data-i18n-aria-label="openSelectedPhoto">
+            <img id="gallery-main-image" src="" alt="">
+            <span class="gallery-zoom" aria-hidden="true" data-i18n="zoom">Zoom</span>
+          </button>
+          <div class="photo-detail" aria-live="polite">
+            <div class="photo-progress"><span id="gallery-counter"></span><span class="photo-line"></span></div>
+            <div class="gallery-meta"><time id="gallery-date"></time><span id="gallery-site" hidden></span><span id="gallery-phase"></span></div>
+            <h3 id="gallery-title"></h3>
+            <p id="gallery-description"></p>
+            <div class="photo-controls">
+              <button id="gallery-prev" type="button" aria-label="Previous photo" data-i18n-aria-label="previousPhoto">‹</button>
+              <button id="gallery-next" type="button" aria-label="Next photo" data-i18n-aria-label="nextPhoto">›</button>
+            </div>
+          </div>
+        </div>
+        <div id="gallery-tabs" class="photo-tabs" role="tablist" aria-label="Choose a construction photo" data-i18n-aria-label="choosePhoto"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="dialog-title">
+    <button id="dialog-close" class="dialog-close" type="button" aria-label="Close enlarged photo" data-i18n-aria-label="closePhoto">×</button>
+    <img id="dialog-image" src="" alt="">
+    <div class="dialog-caption">
+      <p><time id="dialog-date"></time><span id="dialog-site" hidden></span><span id="dialog-phase"></span></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+    </div>
+  </dialog>
+
+  <footer><span data-i18n="dashboardName">Construction Progress Dashboard</span><span data-i18n="publicOnly">Showing publication-approved information only</span><span><span data-i18n="lastUpdated">Last updated:</span> <time id="updated-at"></time></span></footer>
+  <script src="data.js?v=20261113-fe1c88b809"></script>
+  <script src="app.js?v=20261113-fe1c88b809"></script>
+</body>
+</html>
