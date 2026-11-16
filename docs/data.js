@@ -6,17 +6,17 @@ window.PROGRESS_DATA = {
     "contractEnd": "2027-02-26",
     "plannedStart": "2026-11-16",
     "recordStart": null,
-    "asOf": "2026-11-13",
+    "asOf": "2026-11-16",
     "lastActivity": null,
-    "updatedAt": "2026-11-13T08:11:55Z",
+    "updatedAt": "2026-11-16T10:31:02Z",
     "status": "契約締結済み",
-    "currentPhase": "着工の実績は確認待ち",
+    "currentPhase": "アスベスト分析の準備",
     "currentMilestone": "11月16日 実施開始予定",
-    "sourceFiles": 5,
+    "sourceFiles": 7,
     "overallProgress": null,
     "publicationReady": true,
     "weatherUrl": null,
-    "statusCopy": "施工計画書と11月13日版の工程表をもとに、両現場の予定を表示しています。実施記録を確認した作業から実績に反映します。",
+    "statusCopy": "御領港・大浦港のアスベスト分析の申込書（11月13日付）を確認しました。試料採取・分析結果・現地作業の実績は確認待ちです。",
     "timelineStart": "2026-11-01",
     "timelineEnd": "2027-02-26"
   },
@@ -522,7 +522,6 @@ window.PROGRESS_DATA = {
       "熊本県天草市有明町": "Ariake, Amakusa, Kumamoto",
       "11月16日からアスベスト分析の予定": "Asbestos analysis planned from November 16",
       "契約締結済み": "Contract signed",
-      "着工の実績は確認待ち": "Awaiting confirmation of site work",
       "11月16日 実施開始予定": "Planned site start: November 16",
       "予定": "Planned",
       "予定・対象確認待ち": "Planned · scope to confirm",
@@ -541,9 +540,10 @@ window.PROGRESS_DATA = {
       "予備日。作業実績には含めません。": "Reserve days are not counted as completed work.",
       "工程表の準備工に契約日前の日付が含まれます。掲載は原表の予定で、着工・施工実績を示しません。": "The source includes preparatory dates before the contract. They are shown as scheduled, not as proof of site work.",
       "灯": "L",
-      "施工計画書と11月13日版の工程表をもとに、両現場の予定を表示しています。実施記録を確認した作業から実績に反映します。": "Plans for both sites follow the construction plan and the November 13 schedule. Actual work is added once work records are verified.",
       "11月13日版工程表の予定。実施は未確認。": "Planned in the November 13 schedule. Work is unverified.",
-      "大浦港の機器撤去は対象を確認中。": "Equipment removal at Oura remains subject to scope confirmation."
+      "大浦港の機器撤去は対象を確認中。": "Equipment removal at Oura remains subject to scope confirmation.",
+      "アスベスト分析の準備": "Preparing for asbestos analysis",
+      "御領港・大浦港のアスベスト分析の申込書（11月13日付）を確認しました。試料採取・分析結果・現地作業の実績は確認待ちです。": "Application forms dated November 13 are on file for asbestos analysis at both sites. Sampling, analysis results, and on-site work are awaiting confirmation."
     }
   }
 };
