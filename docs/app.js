@@ -350,9 +350,8 @@
       const marks = document.createElement("div");
       marks.className = "calendar-marks";
       for (const id of new Set(events.map(event=>event.siteId || "common"))) {
-        const count = events.filter(event=>(event.siteId || "common")===id).length;
-        const badge = appendText(marks,"span",`${localize(siteMark(id))}${count > 1 ? ` ${count}` : ""}`,`site-token ${id}`);
-        badge.title = `${localize(siteName(id))}: ${count}`;
+        const badge = appendText(marks,"span",localize(siteMark(id)),`site-token ${id}`);
+        badge.title = localize(siteName(id));
       }
       cell.appendChild(marks);
       calendar.appendChild(cell);
