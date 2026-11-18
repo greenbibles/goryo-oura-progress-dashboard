@@ -10,13 +10,12 @@
   const UI_TEXT = {
     en: {
       calendarTitleLabel: "Work calendar",
-      eyebrowBrand: "ONE CONTRACT · TWO SITES", statusEyebrow: "CURRENT STATUS", compareEyebrow: "SITE OVERVIEW", compareSites: "Compare the two sites", workEyebrow: "WORK SCHEDULE", calendarEyebrow: "WORK CALENDAR", actualEyebrow: "VERIFIED ACTUALS", upcomingEyebrow: "UPCOMING PLAN", photoEyebrow: "PHOTO JOURNAL", materialsEyebrow: "MATERIAL REFERENCES", plannedStart: "Planned site start", plannedStartNote: "Date shown in the construction plan", allSites: "All sites", nextPlan: "Next plan", noUpcomingPlan: "No upcoming plan", siteCount: "{count} sites", siteScope: "View by site", workItem: "Work item", noVerifiedRecords: "No verified work recorded", reviewItems: "Items to confirm", dayLabel: "Check a day", noCalendarEvents: "No entries for this date.", scrollSchedule: "Scroll within the schedule to see later dates.", skipToContent: "Skip to main content",
+      eyebrowBrand: "ONE CONTRACT · TWO SITES", statusEyebrow: "CURRENT STATUS", compareEyebrow: "SITE OVERVIEW", compareSites: "Compare the two sites", workEyebrow: "WORK SCHEDULE", calendarEyebrow: "WORK CALENDAR", actualEyebrow: "VERIFIED ACTUALS", upcomingEyebrow: "UPCOMING PLAN", photoEyebrow: "PHOTO JOURNAL", materialsEyebrow: "MATERIAL REFERENCES", plannedStart: "Initial planned start", plannedStartNote: "November 13 construction plan", allSites: "All sites", nextPlan: "Next plan", noUpcomingPlan: "No upcoming plan", siteCount: "{count} sites", siteScope: "View by site", workItem: "Work item", noVerifiedRecords: "No verified work recorded", reviewItems: "Items to confirm", dayLabel: "Check a day", noCalendarEvents: "No entries for this date.", scrollSchedule: "Scroll within the schedule to see later dates.", skipToContent: "Skip to main content",
       asOfLabel: "As of", checking: "Checking", weatherInfo: "Weather", languageSelector: "Language",
       statusCopy: "The timeline is organized from mobilization through the reporting date using verified work records.",
       projectSummaryLabel: "Project summary", contractPeriod: "Contract period", contractPeriodNote: "Period verified from source documents",
       recordStart: "Verified record start", recordStartNote: "First confirmed work date", latestActual: "Latest actual",
-      latestActualNote: "Verified from completed-work fields", reviewedSources: "Reviewed sources", sourceCountSuffix: " sources",
-      reviewedSourcesNote: "Documents used for this view", workStream: "Work stream", statusLegendLabel: "Status legend",
+      latestActualNote: "Verified from completed-work fields", siteMaps: "Google Maps", openSiteMap: "Open {site} in Google Maps (new tab)", workStream: "Work stream", statusLegendLabel: "Status legend",
       completed: "Completed", inProgress: "In progress", paused: "Paused", planned: "Planned", scheduleLabel: "Work schedule, scrollable",
       calendarNavigationLabel: "Change displayed month", previousMonth: "Previous month", nextMonth: "Next month",
       mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat", sun: "Sun",
@@ -39,13 +38,12 @@
     },
     ja: {
       calendarTitleLabel: "工程カレンダー",
-      eyebrowBrand: "1契約・2現場", statusEyebrow: "いまの状況", compareEyebrow: "現場別の状況", compareSites: "2現場の比較", workEyebrow: "全体の見通し", calendarEyebrow: "日付で見る工程", actualEyebrow: "実績", upcomingEyebrow: "予定", photoEyebrow: "写真記録", materialsEyebrow: "材料資料", plannedStart: "実施開始予定", plannedStartNote: "施工計画書に記載", allSites: "全体", nextPlan: "次の予定", noUpcomingPlan: "予定の記録なし", siteCount: "{count}現場", siteScope: "現場の切り替え", workItem: "工程", noVerifiedRecords: "確認済みの実績なし", reviewItems: "確認事項", dayLabel: "日付を選ぶ", noCalendarEvents: "この日の記録はありません。", scrollSchedule: "後の日付は工程表の中を横にスクロールして確認できます。", skipToContent: "本文へ移動",
+      eyebrowBrand: "1契約・2現場", statusEyebrow: "いまの状況", compareEyebrow: "現場別の状況", compareSites: "2現場の比較", workEyebrow: "全体の見通し", calendarEyebrow: "日付で見る工程", actualEyebrow: "実績", upcomingEyebrow: "予定", photoEyebrow: "写真記録", materialsEyebrow: "材料資料", plannedStart: "当初の開始予定", plannedStartNote: "11月13日版施工計画書", allSites: "全体", nextPlan: "次の予定", noUpcomingPlan: "予定の記録なし", siteCount: "{count}現場", siteScope: "現場の切り替え", workItem: "工程", noVerifiedRecords: "確認済みの実績なし", reviewItems: "確認事項", dayLabel: "日付を選ぶ", noCalendarEvents: "この日の記録はありません。", scrollSchedule: "後の日付は工程表の中を横にスクロールして確認できます。", skipToContent: "本文へ移動",
       asOfLabel: "基準日", checking: "確認中", weatherInfo: "天気情報", languageSelector: "言語",
       statusCopy: "確認済みの実績記録をもとに、着工から基準日までの工程を整理しています。",
       projectSummaryLabel: "工事概要", contractPeriod: "契約工期", contractPeriodNote: "根拠資料で確認できた期間",
       recordStart: "実績記録開始", recordStartNote: "最初の確認済み実施日", latestActual: "最新実績",
-      latestActualNote: "実施欄などで確認済み", reviewedSources: "確認資料", sourceCountSuffix: "件",
-      reviewedSourcesNote: "今回の表示に使用した資料", workStream: "工程の流れ", statusLegendLabel: "状態の凡例",
+      latestActualNote: "実施欄などで確認済み", siteMaps: "Google マップ", openSiteMap: "{site}をGoogle マップで開く（新しいタブ）", workStream: "工程の流れ", statusLegendLabel: "状態の凡例",
       completed: "実施済み", inProgress: "進行中", paused: "中断・休工", planned: "予定", scheduleLabel: "横にスクロールできる工程表",
       calendarNavigationLabel: "表示月の切り替え", previousMonth: "前月", nextMonth: "次月",
       mon: "月", tue: "火", wed: "水", thu: "木", fri: "金", sat: "土", sun: "日",
@@ -147,10 +145,20 @@
     if (index) period.appendChild(document.createTextNode(" – "));
     appendText(period,"span",date ? compactDate.format(parseDate(date)) : ui("waitingForConfirmation"),"contract-date");
   }
-  setText("source-count", project.sourceFiles);
-  const sourceCountSuffix = document.querySelector('[data-i18n="sourceCountSuffix"]');
-  if (sourceCountSuffix && language === "en" && Number(project.sourceFiles) === 1) {
-    sourceCountSuffix.textContent = " source";
+  const siteMapLinks = element("site-map-links");
+  for (const site of sites) {
+    if (!site.mapUrl) continue;
+    const link = document.createElement("a");
+    link.href = site.mapUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    const label = ui("openSiteMap", {site: localize(site.name)});
+    link.setAttribute("aria-label", label);
+    link.title = label;
+    appendText(link, "span", site.shortName || site.name);
+    const arrow = appendText(link, "span", "↗");
+    arrow.setAttribute("aria-hidden", "true");
+    siteMapLinks.appendChild(link);
   }
   setText("updated-at", formatUpdatedAt(project.updatedAt));
 
@@ -161,7 +169,7 @@
     setText("milestone-label", ui("currentMilestone"));
     setText("milestone-value", project.currentMilestone || project.currentPhase);
   }
-  setText("milestone-note", project.plannedStart ? ui("plannedStartNote") : "");
+  setText("milestone-note", project.milestoneNote ?? (project.plannedStart ? ui("plannedStartNote") : ""));
 
   const weatherLink = element("weather-link");
   if (project.weatherUrl && weatherLink) {
