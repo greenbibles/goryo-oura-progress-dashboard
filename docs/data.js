@@ -8,18 +8,18 @@ window.PROGRESS_DATA = {
     "recordStart": null,
     "asOf": "2026-11-18",
     "lastActivity": null,
-    "updatedAt": "2026-11-18T02:30:19Z",
+    "updatedAt": "2026-11-18T03:03:13Z",
     "status": "契約締結済み",
-    "currentPhase": "調査日程を調整中",
-    "currentMilestone": "調査日程の確定待ち",
-    "sourceFiles": 8,
+    "currentPhase": "12月3日にアスベスト検査予定",
+    "currentMilestone": "12月3日（木）10時 御領港から",
+    "sourceFiles": 9,
     "overallProgress": null,
     "publicationReady": true,
     "weatherUrl": null,
-    "statusCopy": "両灯台のアスベスト調査は日程を調整中です。調査日は未確定で、現地作業・試料採取・分析結果は確認待ちです。",
+    "statusCopy": "12月1〜2日は熊本への移動、12月3日（木）は10時から御領港、その後に大浦港のアスベスト検査を予定しています。実施結果は確認待ちです。",
     "timelineStart": "2026-11-01",
     "timelineEnd": "2027-02-26",
-    "milestoneNote": "社内確認中・調査日未決定"
+    "milestoneNote": "御領港の検査後、大浦港へ"
   },
   "sites": [
     {
@@ -42,7 +42,11 @@ window.PROGRESS_DATA = {
   "notes": [
     {
       "siteId": "common",
-      "text": "工程表・カレンダーは11月13日版の当初計画です。調査日程を調整中のため、以降の工程も確認待ちです。"
+      "text": "鍵の受け取りも準備事項です。受取日時と大浦港の検査開始時刻は確認待ちです。"
+    },
+    {
+      "siteId": "common",
+      "text": "工程表・カレンダーの「当初計画」は11月13日版です。今回の現場共有予定と施工工程との整合は確認待ちです。"
     },
     {
       "siteId": "oura",
@@ -54,6 +58,22 @@ window.PROGRESS_DATA = {
     }
   ],
   "phases": [
+    {
+      "id": "common-kumamoto-travel",
+      "siteId": "common",
+      "name": "熊本への移動",
+      "start": "2026-12-01",
+      "end": "2026-12-02",
+      "status": "planned",
+      "label": "現場共有の予定",
+      "summary": "12月1〜2日に熊本へ移動予定。鍵の受け取り日時は確認待ち。",
+      "segments": [
+        {
+          "start": "2026-12-01",
+          "end": "2026-12-02"
+        }
+      ]
+    },
     {
       "id": "common-preparation",
       "siteId": "common",
@@ -67,7 +87,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "契約日前を含む原表記載の準備期間。実施は未確認。"
     },
     {
@@ -83,8 +103,24 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "予備日。作業実績には含めません。"
+    },
+    {
+      "id": "goryo-asbestos-inspection",
+      "siteId": "goryo",
+      "name": "アスベスト検査（10時開始）",
+      "start": "2026-12-03",
+      "end": "2026-12-03",
+      "status": "planned",
+      "label": "現場共有の予定",
+      "summary": "10時から御領港で検査予定。その後に大浦港へ移動。実施結果は確認待ち。",
+      "segments": [
+        {
+          "start": "2026-12-03",
+          "end": "2026-12-03"
+        }
+      ]
     },
     {
       "id": "goryo-analysis",
@@ -99,8 +135,8 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "当初計画・日程調整中",
-      "summary": "11月13日版の当初計画。調査日程は調整中で、実施日は未決定。"
+      "label": "当初計画・分析期間確認待ち",
+      "summary": "11月13日版の当初計画。現場から12月3日の検査予定が共有されました。分析期間・結果は確認待ち。"
     },
     {
       "id": "goryo-scaffold",
@@ -115,7 +151,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -131,7 +167,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -147,7 +183,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -163,7 +199,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -179,7 +215,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -195,8 +231,24 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
+    },
+    {
+      "id": "oura-asbestos-inspection",
+      "siteId": "oura",
+      "name": "アスベスト検査（御領港終了後）",
+      "start": "2026-12-03",
+      "end": "2026-12-03",
+      "status": "planned",
+      "label": "現場共有の予定",
+      "summary": "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。",
+      "segments": [
+        {
+          "start": "2026-12-03",
+          "end": "2026-12-03"
+        }
+      ]
     },
     {
       "id": "oura-analysis",
@@ -211,8 +263,8 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "当初計画・日程調整中",
-      "summary": "11月13日版の当初計画。調査日程は調整中で、実施日は未決定。"
+      "label": "当初計画・分析期間確認待ち",
+      "summary": "11月13日版の当初計画。現場から12月3日の検査予定が共有されました。分析期間・結果は確認待ち。"
     },
     {
       "id": "oura-scaffold",
@@ -227,7 +279,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -243,7 +295,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定・対象確認待ち",
+      "label": "当初計画・対象確認待ち",
       "summary": "工程表の項目。大浦港での機器の有無と実施範囲は確認待ち。"
     },
     {
@@ -259,7 +311,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -275,7 +327,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -291,7 +343,7 @@ window.PROGRESS_DATA = {
         }
       ],
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。"
     },
     {
@@ -299,7 +351,7 @@ window.PROGRESS_DATA = {
       "siteId": "oura",
       "name": "足場解体・片付け",
       "status": "planned",
-      "label": "予定",
+      "label": "当初計画",
       "summary": "11月13日版工程表の予定。実施は未確認。",
       "start": "2027-01-21",
       "end": "2027-01-22",
@@ -316,88 +368,22 @@ window.PROGRESS_DATA = {
   "gallery": [],
   "upcoming": [
     {
-      "siteId": "goryo",
-      "date": "2026-11-16",
-      "work": "アスベスト分析",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2026-11-16",
-      "work": "アスベスト分析",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "goryo",
+      "siteId": "common",
       "date": "2026-12-01",
-      "work": "仮設足場",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
+      "work": "熊本への移動",
+      "note": "12月1〜2日に熊本へ移動予定。鍵の受け取り日時は確認待ち。"
     },
     {
       "siteId": "goryo",
       "date": "2026-12-03",
-      "work": "機器撤去",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "goryo",
-      "date": "2026-12-05",
-      "work": "灯塔撤去",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "goryo",
-      "date": "2026-12-05",
-      "work": "発生材処理",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "goryo",
-      "date": "2026-12-21",
-      "work": "足場解体・片付け",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
+      "work": "アスベスト検査（10時開始）",
+      "note": "10時から御領港で検査予定。その後に大浦港へ移動。実施結果は確認待ち。"
     },
     {
       "siteId": "oura",
-      "date": "2026-12-22",
-      "work": "仮設工事",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2026-12-24",
-      "work": "機器撤去",
-      "note": "11月13日版の当初計画。調査日程を調整中。大浦港での機器の有無と実施範囲は確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2026-12-26",
-      "work": "灯塔撤去",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2026-12-26",
-      "work": "発生材処理",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "goryo",
-      "date": "2027-01-11",
-      "work": "コンクリート打設",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2027-01-16",
-      "work": "コンクリート打設",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
-    },
-    {
-      "siteId": "oura",
-      "date": "2027-01-21",
-      "work": "足場解体・片付け",
-      "note": "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。"
+      "date": "2026-12-03",
+      "work": "アスベスト検査（御領港終了後）",
+      "note": "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。"
     }
   ],
   "calendarRanges": [
@@ -406,112 +392,152 @@ window.PROGRESS_DATA = {
       "end": "2026-11-15",
       "siteId": "common",
       "label": "準備工（原表）",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2027-01-23",
       "end": "2027-02-26",
       "siteId": "common",
       "label": "予備日",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-11-16",
       "end": "2026-11-30",
       "siteId": "goryo",
       "label": "アスベスト分析（当初計画）",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-01",
       "end": "2026-12-02",
       "siteId": "goryo",
       "label": "仮設足場",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-03",
       "end": "2026-12-04",
       "siteId": "goryo",
       "label": "機器撤去",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-05",
       "end": "2026-12-20",
       "siteId": "goryo",
       "label": "灯塔撤去",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-05",
       "end": "2026-12-20",
       "siteId": "goryo",
       "label": "発生材処理",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-21",
       "end": "2026-12-21",
       "siteId": "goryo",
       "label": "足場解体・片付け",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2027-01-11",
       "end": "2027-01-15",
       "siteId": "goryo",
       "label": "コンクリート打設",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-11-16",
       "end": "2026-11-30",
       "siteId": "oura",
       "label": "アスベスト分析（当初計画）",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-22",
       "end": "2026-12-23",
       "siteId": "oura",
       "label": "仮設工事",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-24",
       "end": "2026-12-25",
       "siteId": "oura",
       "label": "機器撤去",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-26",
       "end": "2027-01-10",
       "siteId": "oura",
       "label": "灯塔撤去",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2026-12-26",
       "end": "2027-01-10",
       "siteId": "oura",
       "label": "発生材処理",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2027-01-16",
       "end": "2027-01-20",
       "siteId": "oura",
       "label": "コンクリート打設",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
     },
     {
       "start": "2027-01-21",
       "end": "2027-01-22",
       "siteId": "oura",
       "label": "足場解体・片付け",
-      "status": "planned"
+      "status": "planned",
+      "labelStatus": "当初計画"
+    },
+    {
+      "start": "2026-12-01",
+      "end": "2026-12-02",
+      "siteId": "common",
+      "label": "熊本への移動",
+      "status": "planned",
+      "labelStatus": "現場共有の予定"
+    },
+    {
+      "start": "2026-12-03",
+      "end": "2026-12-03",
+      "siteId": "goryo",
+      "label": "アスベスト検査（10時開始）",
+      "status": "planned",
+      "labelStatus": "現場共有の予定"
+    },
+    {
+      "start": "2026-12-03",
+      "end": "2026-12-03",
+      "siteId": "oura",
+      "label": "アスベスト検査（御領港終了後）",
+      "status": "planned",
+      "labelStatus": "現場共有の予定"
     }
   ],
   "translations": {
@@ -560,7 +586,24 @@ window.PROGRESS_DATA = {
       "11月13日版の当初計画。調査日程は調整中で、実施日は未決定。": "Initial November 13 plan. Survey dates are under review and have not been decided.",
       "アスベスト分析（当初計画）": "Asbestos analysis (initial plan)",
       "11月13日版の当初計画。調査日程を調整中のため、以降の工程も確認待ち。": "Initial November 13 plan. Survey dates are being coordinated; subsequent work dates also need confirmation.",
-      "11月13日版の当初計画。調査日程を調整中。大浦港での機器の有無と実施範囲は確認待ち。": "Initial November 13 plan; survey dates are under review. Equipment and the removal scope at Oura still need confirmation."
+      "11月13日版の当初計画。調査日程を調整中。大浦港での機器の有無と実施範囲は確認待ち。": "Initial November 13 plan; survey dates are under review. Equipment and the removal scope at Oura still need confirmation.",
+      "12月3日にアスベスト検査予定": "Asbestos inspection planned for Dec 3",
+      "12月3日（木）10時 御領港から": "Dec 3 (Thu), 10:00 — Goryo first",
+      "御領港の検査後、大浦港へ": "Oura follows the Goryo inspection",
+      "12月1〜2日は熊本への移動、12月3日（木）は10時から御領港、その後に大浦港のアスベスト検査を予定しています。実施結果は確認待ちです。": "Travel to Kumamoto is planned for December 1–2. On Thursday, December 3, asbestos inspections are planned from 10:00 at Goryo, followed by Oura. Results are awaiting confirmation.",
+      "鍵の受け取りも準備事項です。受取日時と大浦港の検査開始時刻は確認待ちです。": "Key collection is also a preparation item. The collection time and the Oura inspection start time are awaiting confirmation.",
+      "工程表・カレンダーの「当初計画」は11月13日版です。今回の現場共有予定と施工工程との整合は確認待ちです。": "Entries marked Initial plan come from the November 13 schedule. Alignment of the latest field plans with the construction schedule is awaiting confirmation.",
+      "当初計画": "Initial plan",
+      "当初計画・対象確認待ち": "Initial plan; scope to confirm",
+      "当初計画・分析期間確認待ち": "Initial plan; analysis period to confirm",
+      "現場共有の予定": "Plan shared by field team",
+      "11月13日版の当初計画。現場から12月3日の検査予定が共有されました。分析期間・結果は確認待ち。": "Initial November 13 plan. The field team has since shared a December 3 inspection plan. The analysis period and results remain unconfirmed.",
+      "熊本への移動": "Travel to Kumamoto",
+      "12月1〜2日に熊本へ移動予定。鍵の受け取り日時は確認待ち。": "Travel to Kumamoto is planned for December 1–2. Key collection timing is awaiting confirmation.",
+      "アスベスト検査（10時開始）": "Asbestos inspection (10:00 start)",
+      "10時から御領港で検査予定。その後に大浦港へ移動。実施結果は確認待ち。": "Inspection is planned from 10:00 at Goryo, followed by travel to Oura. Results are awaiting confirmation.",
+      "アスベスト検査（御領港終了後）": "Asbestos inspection (after Goryo)",
+      "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。": "The Oura inspection is planned after Goryo. Oura's start time has not been shared."
     }
   }
 };
