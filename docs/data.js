@@ -8,7 +8,7 @@ window.PROGRESS_DATA = {
     "recordStart": null,
     "asOf": "2026-11-18",
     "lastActivity": null,
-    "updatedAt": "2026-11-18T03:03:13Z",
+    "updatedAt": "2026-11-18T04:02:35Z",
     "status": "契約締結済み",
     "currentPhase": "12月3日にアスベスト検査予定",
     "currentMilestone": "12月3日（木）10時 御領港から",
@@ -109,11 +109,11 @@ window.PROGRESS_DATA = {
     {
       "id": "goryo-asbestos-inspection",
       "siteId": "goryo",
-      "name": "アスベスト検査（10時開始）",
+      "name": "アスベスト検査",
       "start": "2026-12-03",
       "end": "2026-12-03",
       "status": "planned",
-      "label": "現場共有の予定",
+      "label": "予定・10時開始",
       "summary": "10時から御領港で検査予定。その後に大浦港へ移動。実施結果は確認待ち。",
       "segments": [
         {
@@ -121,22 +121,6 @@ window.PROGRESS_DATA = {
           "end": "2026-12-03"
         }
       ]
-    },
-    {
-      "id": "goryo-analysis",
-      "siteId": "goryo",
-      "name": "アスベスト分析",
-      "start": "2026-11-16",
-      "end": "2026-11-30",
-      "segments": [
-        {
-          "start": "2026-11-16",
-          "end": "2026-11-30"
-        }
-      ],
-      "status": "planned",
-      "label": "当初計画・分析期間確認待ち",
-      "summary": "11月13日版の当初計画。現場から12月3日の検査予定が共有されました。分析期間・結果は確認待ち。"
     },
     {
       "id": "goryo-scaffold",
@@ -237,11 +221,11 @@ window.PROGRESS_DATA = {
     {
       "id": "oura-asbestos-inspection",
       "siteId": "oura",
-      "name": "アスベスト検査（御領港終了後）",
+      "name": "アスベスト検査",
       "start": "2026-12-03",
       "end": "2026-12-03",
       "status": "planned",
-      "label": "現場共有の予定",
+      "label": "予定・御領港終了後",
       "summary": "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。",
       "segments": [
         {
@@ -249,22 +233,6 @@ window.PROGRESS_DATA = {
           "end": "2026-12-03"
         }
       ]
-    },
-    {
-      "id": "oura-analysis",
-      "siteId": "oura",
-      "name": "アスベスト分析",
-      "start": "2026-11-16",
-      "end": "2026-11-30",
-      "segments": [
-        {
-          "start": "2026-11-16",
-          "end": "2026-11-30"
-        }
-      ],
-      "status": "planned",
-      "label": "当初計画・分析期間確認待ち",
-      "summary": "11月13日版の当初計画。現場から12月3日の検査予定が共有されました。分析期間・結果は確認待ち。"
     },
     {
       "id": "oura-scaffold",
@@ -404,14 +372,6 @@ window.PROGRESS_DATA = {
       "labelStatus": "当初計画"
     },
     {
-      "start": "2026-11-16",
-      "end": "2026-11-30",
-      "siteId": "goryo",
-      "label": "アスベスト分析（当初計画）",
-      "status": "planned",
-      "labelStatus": "当初計画"
-    },
-    {
       "start": "2026-12-01",
       "end": "2026-12-02",
       "siteId": "goryo",
@@ -456,14 +416,6 @@ window.PROGRESS_DATA = {
       "end": "2027-01-15",
       "siteId": "goryo",
       "label": "コンクリート打設",
-      "status": "planned",
-      "labelStatus": "当初計画"
-    },
-    {
-      "start": "2026-11-16",
-      "end": "2026-11-30",
-      "siteId": "oura",
-      "label": "アスベスト分析（当初計画）",
       "status": "planned",
       "labelStatus": "当初計画"
     },
@@ -603,7 +555,10 @@ window.PROGRESS_DATA = {
       "アスベスト検査（10時開始）": "Asbestos inspection (10:00 start)",
       "10時から御領港で検査予定。その後に大浦港へ移動。実施結果は確認待ち。": "Inspection is planned from 10:00 at Goryo, followed by travel to Oura. Results are awaiting confirmation.",
       "アスベスト検査（御領港終了後）": "Asbestos inspection (after Goryo)",
-      "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。": "The Oura inspection is planned after Goryo. Oura's start time has not been shared."
+      "御領港の検査終了後、大浦港で検査予定。大浦港の開始時刻は未共有。": "The Oura inspection is planned after Goryo. Oura's start time has not been shared.",
+      "アスベスト検査": "Asbestos inspection",
+      "予定・10時開始": "Planned · 10:00 start",
+      "予定・御領港終了後": "Planned · after Goryo"
     }
   }
 };

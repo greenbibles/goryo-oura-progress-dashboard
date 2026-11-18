@@ -379,7 +379,7 @@ footer { display: flex; justify-content: space-between; gap: 18px; max-width: 11
 .gantt-group.goryo { background:var(--goryo-pale); }
 .gantt-group.oura { background:var(--oura-pale); }
 .gantt-track { background-size:25% 100%; }
-.gantt-bar { top:50%; transform:translateY(-50%); height:1.2rem; min-width:0; border-radius:.25rem; }
+.gantt-bar { top:50%; transform:translateY(-50%); height:1.2rem; min-width:0; padding:0; border-radius:.25rem; }
 .gantt-bar.planned.goryo { background:#c1e0e1; border-color:var(--goryo); }
 .gantt-bar.planned.oura { background:#ebd2ad; border-color:var(--oura); }
 .gantt-bar.planned.common { background:#dce7df; border-color:#446653; }
