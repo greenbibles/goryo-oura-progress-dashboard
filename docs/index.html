@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex,nofollow">
   <link rel="icon" href="data:,">
   <title>工事進捗ダッシュボード</title>
-  <link rel="stylesheet" href="style.css?v=20261118-f74ced0c20">
+  <link rel="stylesheet" href="style.css?v=20261120-ff75fc5b8f">
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-i18n="skipToContent">本文へ移動</a>
@@ -31,7 +31,7 @@
         <p class="eyebrow" data-i18n="statusEyebrow">いまの状況</p>
         <div class="status-line"><span class="pulse" aria-hidden="true"></span><strong id="project-status"></strong></div>
         <h2 id="current-phase"></h2>
-        <p id="status-copy" class="status-copy" data-i18n="statusCopy">The timeline is organized from mobilization through the reporting date using verified work records.</p>
+        <p id="status-copy" class="status-copy" data-i18n="statusCopy">現地工事は未着工です。検査結果を確認してから作業日程を調整します。</p>
       </div>
       <div class="milestone">
         <span id="milestone-label">Current milestone</span>
@@ -42,8 +42,8 @@
 
     <section class="summary-grid" aria-label="Project summary" data-i18n-aria-label="projectSummaryLabel">
       <article class="summary"><span data-i18n="contractPeriod">Contract period</span><strong id="contract-period"></strong><small data-i18n="contractPeriodNote">Period verified from source documents</small></article>
-      <article class="summary"><span data-i18n="plannedStart">当初の開始予定</span><strong id="planned-start"></strong><small data-i18n="plannedStartNote">11月13日版施工計画書</small></article>
-      <article class="summary"><span data-i18n="latestActual">Latest actual</span><strong id="last-activity"></strong><small data-i18n="latestActualNote">Verified from completed-work fields</small></article>
+      <article class="summary"><span data-i18n="plannedStart">現地工事の着工予定</span><strong id="planned-start"></strong><small data-i18n="plannedStartNote">検査結果確認後に調整</small></article>
+      <article class="summary"><span data-i18n="latestActual">現地施工の最新実績</span><strong id="last-activity"></strong><small data-i18n="latestActualNote">週報・現場記録で確認</small></article>
       <article class="summary"><span data-i18n="siteMaps">Google マップ</span><div id="site-map-links" class="site-map-links"></div></article>
     </section>
 
@@ -99,7 +99,7 @@
         </section>
       </div>
       <div class="column-block">
-        <div class="section-head compact"><div><p class="eyebrow" data-i18n="actualEyebrow">実績</p><h2 data-i18n="latestLog">Latest work</h2></div></div>
+        <div class="section-head compact"><div><p class="eyebrow" data-i18n="actualEyebrow">施工実績</p><h2 data-i18n="latestLog">現地施工の記録</h2></div></div>
         <section class="panel log-card" tabindex="0" aria-label="Verified work history" data-i18n-aria-label="verifiedHistoryLabel"><div id="recent-log"></div></section>
       </div>
     </section>
@@ -107,7 +107,7 @@
     <section id="upcoming-section">
       <div class="section-head upcoming-head">
         <div><p class="eyebrow" data-i18n="upcomingEyebrow">予定</p><h2 data-i18n="upcomingPlan">Upcoming plan</h2></div>
-        <p class="section-caption" data-i18n="upcomingCaption">Unverified planned work is kept separate from confirmed actuals.</p>
+        <p class="section-caption" data-i18n="upcomingCaption">検査結果を確認してから作業開始を見込んでいます。施工期間は調整前の目安です。</p>
       </div>
       <section class="panel upcoming-card"><div id="upcoming-log" class="upcoming-grid"></div></section>
     </section>
@@ -159,7 +159,7 @@
   </dialog>
 
   <footer><span data-i18n="dashboardName">Construction Progress Dashboard</span><span data-i18n="publicOnly">Showing publication-approved information only</span><span><span data-i18n="lastUpdated">Last updated:</span> <time id="updated-at"></time></span></footer>
-  <script src="data.js?v=20261118-f74ced0c20"></script>
-  <script src="app.js?v=20261118-f74ced0c20"></script>
+  <script src="data.js?v=20261120-ff75fc5b8f"></script>
+  <script src="app.js?v=20261120-ff75fc5b8f"></script>
 </body>
 </html>
